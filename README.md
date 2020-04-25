@@ -1,7 +1,20 @@
 # Android ScreenShot Detector 截圖偵測器
 
 ## 導入方法
-編成Library出了點問題以後再處理
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```
+dependencies {
+	implementation 'com.github.CiaShangLin:ScreenShot-Detector:v1.0.3'
+}
+```
 
 ## 使用方法
 ```java
@@ -40,6 +53,8 @@ class MainActivity : AppCompatActivity() {
 ```
 
 ## 實作原理
+註冊兩個個content監聽器,一個內部存儲一個外部存儲,當檔案有所變動的時候就會觸發監聽器,例如:新增,刪除,修改...
+判斷新增的檔案檔名有沒有screen shot之類的,由於android品牌眾多所以有可能會有遺漏的關鍵字,如果有的話再自行補上。
 
 
 ## 注意事項
