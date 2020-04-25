@@ -1,19 +1,7 @@
 # Android ScreenShot Detector 截圖偵測器
 
 ## 導入方法
-```
-allprojects {
-		repositories {
-			maven { url 'https://jitpack.io' }
-		}
-}
-```
-
-```
-dependencies {
-	implementation 'com.github.CiaShangLin:ScreenShot-Detector:v1.0.0'
-}
-```
+編成Library出了點問題以後再處理
 
 ## 使用方法
 ```java
