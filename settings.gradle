@@ -1,0 +1,3 @@
+rootProject.name='ScreenShot_Detector_Demo'
+include ':app'
+include ':screenshotdetector'
